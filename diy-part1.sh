@@ -15,11 +15,6 @@
 
 # Add a feed source
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-sed -i '$a src-git packages https://github.com/coolsnowwolf/packages' feeds.conf.default
-sed -i '$a src-git luci https://github.com/coolsnowwolf/luci' feeds.conf.default
-sed -i '$a src-git routing https://git.openwrt.org/feed/routing.git' feeds.conf.default
-sed -i '$a src-git telephony https://git.openwrt.org/feed/telephony.git' feeds.conf.default
-sed -i '$a src-git freifunk https://github.com/freifunk/openwrt-packages.git' feeds.conf.default
 
 # Add Apps
 git clone https://github.com/project-openwrt/luci-app-koolproxyR package/luci-app-koolproxyR
